@@ -1,0 +1,19 @@
+{
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "description": "take csv and html files and create a pdf document",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlonTzafari/pdf-generator.git"
+  },
+  "author": "Alon Tzafari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlonTzafari/pdf-generator/issues"
+  },
+  "homepage": "https://github.com/AlonTzafari/pdf-generator#readme"
+}
