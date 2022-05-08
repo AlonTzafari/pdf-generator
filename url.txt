@@ -1,0 +1,1 @@
+file:///C:/Users/Alon/Projects/Github/pdf-generator/app/renderer/index.html

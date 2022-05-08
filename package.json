@@ -2,10 +2,17 @@
     "name": "pdf-generator",
     "version": "1.0.0",
     "description": "take csv and html files and create a pdf document",
-    "main": "index.js",
+    "main": "app/dist/main.js",
     "scripts": {
         "start": "electron .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev:react": "cd ./src/renderer && npm run dev",
+        "build:react": "cd ./src/renderer && npm run build",
+        "dev:electron": "set NODE_ENV=dev&& electron .",
+        "dev:all": "start npm run dev:react && start npm run dev:electron",
+        "dev": "npm run build:main && npm run dev:all",
+        "build:main": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "package": "electron-packager ./app app --platform=win32 --out=../electronDist"
     },
     "repository": {
         "type": "git",
@@ -18,6 +25,8 @@
     },
     "homepage": "https://github.com/AlonTzafari/pdf-generator#readme",
     "devDependencies": {
-        "electron": "^18.2.0"
+        "electron": "^18.2.0",
+        "electron-packager": "^15.5.1",
+        "typescript": "^4.6.4"
     }
 }
